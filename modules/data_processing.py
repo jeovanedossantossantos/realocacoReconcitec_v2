@@ -9,7 +9,7 @@ def process_data(avaliadores, trabalhos_aprovados, maximo):
     # trabalhos_aprovados = trabalhos_aprovados.loc[trabalhos_aprovados['Resultado'] == 'APROVADA']
     print("Colunas do DataFrame trabalhos_aprovados:")
     print(trabalhos_aprovados.columns.tolist())
-    trabalhos_aprovados = trabalhos_aprovados[['Nome', 'Título',"CPF","Email", 'Área do conhecimento', 'Centro de ensino',"Orientador","Trilha","Dia","Horário"]]
+    trabalhos_aprovados = trabalhos_aprovados[['Nome', 'Título', 'Área do conhecimento', 'Centro de ensino',"Orientador","Trilha","Dia","Horário","Poster"]]
     
     trabalhos_aprovados['Avaliador']="Sem avaliador"
     trabalhos_aprovados["Centro de Ensino/Setor"]=""

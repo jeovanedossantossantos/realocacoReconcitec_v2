@@ -154,11 +154,11 @@ if st.session_state.avaliadores is not None:
                 else:
                     trabalho_opcao = st.selectbox(
                         "Selecione um trabalho para atribuir:",
-                        options=trabalhos_disponiveis['Titulo']
+                        options=trabalhos_disponiveis['Título']
                     )
 
                     if st.button("✅ Confirmar Atribuição"):
-                        idx_trabalho = trabalhos_disponiveis[trabalhos_disponiveis['Titulo'] == trabalho_opcao].index[0]
+                        idx_trabalho = trabalhos_disponiveis[trabalhos_disponiveis['Título'] == trabalho_opcao].index[0]
                         idx_avaliador = st.session_state.avaliadores[
                             st.session_state.avaliadores['Nome:'] == st.session_state.selecionado_para_atribuicao
                         ].index[0]
